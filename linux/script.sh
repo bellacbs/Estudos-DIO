@@ -13,17 +13,17 @@ groupadd GRP_VEN
 groupadd GRP_SEC
 
 echo "criando usuarios"
-useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_ADM
-useradd maria -c "Maria" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_ADM
-useradd joao -c "Joao" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_ADM
+useradd carlos -c "Carlos" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_ADM
+useradd maria -c "Maria" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_ADM
+useradd joao -c "Joao" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_ADM
 
-useradd debora -c "Debora" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_VEN
-useradd sebastiana -c "Sebastiana" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_VEN
-useradd roberto -c "Roberto" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_VEN
+useradd debora -c "Debora" -m -s /bin/bash -p $(openssl passwd  Senha123) -G GRP_VEN
+useradd sebastiana -c "Sebastiana" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_VEN
+useradd roberto -c "Roberto" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_VEN
 
-useradd josefina -c "josefina" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
-useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
-useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
+useradd josefina -c "josefina" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
+useradd amanda -c "Amanda" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
+useradd rogerio -c "Rogerio" -m -s /bin/bash -p $(openssl passwd Senha123) -G GRP_SEC
 
 echo "permissoes de diretorios"
 chown root:GRP_ADM /adm
